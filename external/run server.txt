@@ -1,0 +1,42 @@
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS E:\mohan> & e:/mohan/hai/Scripts/Activate.ps1
+Collecting django
+  Using cached Django-4.1.1-py3-none-any.whl (8.1 MB)
+Collecting tzdata
+  Using cached tzdata-2022.2-py2.py3-none-any.whl (336 kB)
+  Using cached sqlparse-0.4.2-py3-none-any.whl (42 kB)
+Collecting asgiref<4,>=3.5.2
+  Using cached asgiref-3.5.2-py3-none-any.whl (22 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+(hai) PS E:\mohan> pip install pymongo
+Collecting pymongo
+  Using cached pymongo-4.2.0-cp310-cp310-win_amd64.whl (374 kB)
+Installing collected packages: pymongo
+Successfully installed pymongo-4.2.0
+Collecting dnspython
+  Using cached dnspython-2.2.1-py3-none-any.whl (269 kB)
+Installing collected packages: dnspython
+Successfully installed dnspython-2.2.1
+(hai) PS E:\mohan> pip install mongoengine
+Installing collected packages: mongoengine
+Successfully installed mongoengine-0.24.2
+(hai) PS E:\mohan> pip install certifi
+Collecting certifi
+  Downloading certifi-2022.9.14-py3-none-any.whl (162 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.5/162.5 kB 1.6 MB/s eta 0:00:00
+Installing collected packages: certifi
+Successfully installed certifi-2022.9.14
+(hai) PS E:\mohan> pip freeze >requirements.txt       
+(hai) PS E:\mohan> cd myjango
+(hai) PS E:\mohan\myjango> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 18, 2022 - 21:50:43
+Django version 4.1.1, using settings 'myjango.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[18/Sep/2022 21:54:21] "GET /basic/ HTTP/1.1" 200 7
+Not Found: /favicon.ico
